@@ -1,0 +1,15 @@
+DEFAULT menu.c32
+PROMPT 0
+TIMEOUT 100 # start the default after 10 seconds
+MENU TITLE --== Amahi Netboot Main Menu ==--
+
+# Exit the PXE stack and boot the local system
+LABEL bootlocal
+	MENU DEFAULT
+	MENU LABEL Boot from the Hard Drive
+	localboot 0
+
+LABEL memtest86+
+	MENU LABEL Memtest86+ --->
+	kernel memtest/memtest86+-1.65
+
