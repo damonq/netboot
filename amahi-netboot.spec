@@ -24,8 +24,8 @@ Amahi Netboot - Boot over the network from your HDA
 
 
 %install
-%{__mkdir} -p %{buildroot}/var/lib/tftpboot/
-%{__cp} -a tftp/* %{buildroot}/var/lib/tftpboot/
+%{__mkdir} -p %{buildroot}/tftpboot/
+%{__cp} -a tftp/* %{buildroot}/tftpboot/
 %{__mkdir} -p %{buildroot}%{_sysconfdir}/dnsmasq.d/
 %{__cp} -a amahi-pxe.conf %{buildroot}%{_sysconfdir}/dnsmasq.d/
 
