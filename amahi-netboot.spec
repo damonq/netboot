@@ -45,7 +45,7 @@ fi
 
 %files
 %defattr(-,root,root,-)
-/var/lib/tftpboot/*
+/tftpboot/*
 %{_sysconfdir}/dnsmasq.d/amahi-pxe.conf
 
 %changelog
